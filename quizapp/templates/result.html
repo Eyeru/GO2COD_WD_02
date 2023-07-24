@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+<body>
+
+
+    <div class="col-sm-8">
+        {% block content %}
+               <h2 class="m-0 text-primary">Total-{{total}}</h2>
+        <div class="container mt-3">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Result</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-primary">
+                  <td>Total Questions</td>
+                  <td>{{total}}</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Correct</td>
+                  <td>{{correct}}</td>
+                </tr>
+                <tr class="table-danger">
+                  <td>Wrong</td>
+                  <td>{{wrong}}</td>
+                </tr>
+                <tr class="table-info">
+                  <td>Percent</td>
+                  <td>{{percent}}</td>
+                </tr>
+                <tr class="table-dark">
+                  <td>Score</td>
+                  <td>{{score}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      {% endblock %}
+    </div>
+
+
+
+
+    
+  </div>
+</div>
+
+</body>
+</html>
